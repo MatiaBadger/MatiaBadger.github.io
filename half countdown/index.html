@@ -1,0 +1,55 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>My countdown</title>
+            <script src="code.js">
+        
+            </script>
+            
+            <style>
+                body
+                {
+                background-image: url("spacebg.jfif"); 
+                background-image: repeat;
+                }
+            </style>
+           
+        </head>
+        <body style="color: antiquewhite;" >
+            <h2 style="text-align:center" >UAT Space Program</h2>
+            <!--code underneath to add sound-->
+            
+            <!--coded to place img on screen-->
+            <img src="UATspaceLogo-2.jpg" alt="UATspaceLogo-2">
+            <br>
+            <!--this adds music to the page
+            <embed src="us-lab-background.mp3" height="1">
+                <audio src="us-lab-background.mp3" autoplay='us-lab-background'></audio>
+            </embed>
+             -->
+            <!--display button text-->
+            <h3><strong>Practice Buttons</strong></h3>
+            <p><strong>These buttons are just to pratice your button clicking skills before you actually press the counntdown.</strong>
+                <br>
+                <em> You will know if your button was 
+                successfully <br>pressed if the button becomes shadded.</em>
+            </p>
+            <!--display start button-->
+            <button id="myStartButton" onClick="PressedStartButton()">Start</button>
+            <!--Display a Stop button-->
+            <button id="myStopButton" onClick="PressedStopButton()">Stop</button>
+            <!--break in lin as well as HoRizontal line-->
+            <br>
+            <hr> 
+            <!--button to start the countdown-->
+            <button onClick="myCountDownToLaunch()">Start Countdown</button>
+            <!--This will display the countdown-->
+            <p id="DisplayCountdown">10</p>
+            <p id="DisplayMessage">Waiting to start the countdown...</p>
+        </body>
+        
+        <footer>
+            <!--add audio file to the page-->
+            <audio controls autoplay loop><source src="us-lab-background.mp3" type-="audio/mp3"></audio>
+        </footer>
+    </html>

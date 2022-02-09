@@ -1,0 +1,122 @@
+<!--name: Matia Gardner's Blastoff!!-->
+<!--this tells the browser we are sending it a HTML document to render-->
+<!DOCTYPE html>
+<!--Starts the HTML Document-->
+<html lang="en">
+<head>
+    <!--this will display the title as the tile in tab-->
+    <title>UAT Mission Control</title>
+    <script>
+        // the script tags lets the browser know we are in javascript and not html 
+        function StartTheCountdown() 
+        {
+            // Purpose of this function is to start the countdown
+            // and the control the count down also
+
+            // declare variables 
+            var countdown = 10;
+            // used to keep track of acutaul time
+            // 1000 = 1 second because we are using milliseconds
+            var timeout = 10000;
+
+// Tesy loop starts here
+// A for loop need three parts
+   // 1. Where to start
+   // 2. How many times do you want to loop the code in the scope { }
+   // 3. Where to end
+           for(i=10; i>=0; i=i-1) {
+           setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout);
+            timeout = timeout - 1000;
+           }
+           // after we count to 0 we have blast off
+
+// Test loop ends here
+            // TODO: Put This In A Loop.
+// ***Start of the loop will be here****
+            // use the set
+            /*setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = "Blast Off!"
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000; */
+//***** The End Of The Loop Will Be here*******
+        }
+    </script>
+
+    <!--lets make CSS to put a background image on the entire page-->
+    <style>
+        body
+        {
+            background-image: url("spacebg.jfif");
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+<body style="color: antiquewhite;" >
+    <h1 style="text-align:center">UAT Mission Control</h1> 
+    <hr>
+    <!--displaying a futurictic looking control center-->
+    <p>This Countdown begans our next step to the cosmos and into the future</p>
+    <p>to Infinity and Beyond</p>
+    <!--this is a button to start the count down-->
+    <img src="futurecontrol.jpg" alt="mission Control">
+    <br>
+    <hr>
+    <button type="button" onclick="StartTheCountdown()">Start Countdown</button>
+    <!--this is the key HTML element aka tag which we will be updating durring the count down-->
+    <p id="CountdownDisplay">10</p>
+    <hr>
+    <footer>
+        <p>UAT Space Program</p>
+        <p>Author: Matia Gardner</p>
+    </footer>
+</body>
+</html>

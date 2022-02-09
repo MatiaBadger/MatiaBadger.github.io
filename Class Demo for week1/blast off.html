@@ -1,0 +1,82 @@
+Matia Gardner
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UAT Mission Control</title>
+    <script>
+        // the script tags lets the browser know we are in javascript and not html 
+        function StartTheCountdown() 
+        {
+            // Purpose of this function is to start the countdown
+            // and the control the count down also
+
+            // declare variables 
+            var countdown = 10;
+            // used to keep track of acutaul time
+            // 1000 = 1 second because we are using milliseconds
+            var timeout = 10000;
+            // use the set
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = "Blast Off!"
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+            setTimeout(() => {
+                document.getElementById("CountdownDisplay").innerHTML = countdown
+                countdown = countdown - 1;
+            }, timeout)
+            timeout = timeout - 1000;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>UAT Mission Control</h1> 
+    <p>This Countdown begans our next step to the cosmos and into the future</p>
+    <h2>Launch</h2>
+    <!--this is a button to start the count down-->
+    <button type="button" onclick="StartTheCountdown()">Start Countdown</button>
+    <!--this is the key HTML element aka tag which we will be updating durring the count down-->
+    <p id="CountdownDisplay">10</p>
+</body>
+</html>
